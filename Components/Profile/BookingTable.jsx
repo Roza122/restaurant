@@ -50,21 +50,20 @@ function ProfileDetails(props) {
   return (
     <>
       <div className="row center">
-        <h3 className="center">مێز گـرتـن</h3>
+        <h3 className="center">Booking Table</h3>
         <div className="col s12 center">
           <div className={classes.inputField}>
-            <label htmlFor="name">نـاو</label>
+            <label htmlFor="name">Name</label>
             <input
               onChange={onChange}
               type="text"
               id="name"
               name="name"
-              placeholder="بە ناوی کێ مێزەکە ئەگرن"
             />
           </div>
 
           <div className={classes.inputField}>
-            <label htmlFor="date">بەروار</label>
+            <label htmlFor="date">Date</label>
             <input
               onChange={onChange}
               onFocus={onChange}
@@ -75,7 +74,7 @@ function ProfileDetails(props) {
             />
           </div>
           <div className={classes.inputField}>
-            <label htmlFor="time">کات</label>
+            <label htmlFor="time">Time</label>
             <input
               onFocus={onChange}
               onChange={onChange}
@@ -86,7 +85,7 @@ function ProfileDetails(props) {
             />
           </div>
           <div className={classes.inputField}>
-            <label htmlFor="number">ژ. کەس</label>
+            <label htmlFor="number">num Of Persons</label>
             <input
               onChange={onChange}
               type="number"
@@ -95,7 +94,7 @@ function ProfileDetails(props) {
             />
           </div>
           <div className={classes.inputField}>
-            <label htmlFor="note">تـێـبـیـنـی</label>
+            <label htmlFor="note">Note</label>
             <textarea
               onChange={onChange}
               name="note"
@@ -103,15 +102,9 @@ function ProfileDetails(props) {
               id="note"
             />
           </div>
-          {name && time && date && personsNumber ? (
             <button onClick={submitHandler} className="btn btn-success">
-              نـاردن
+              Submit
             </button>
-          ) : (
-            <button className="btn btn-success" disabled>
-              نـاردن
-            </button>
-          )}
         </div>
       </div>
     </>
