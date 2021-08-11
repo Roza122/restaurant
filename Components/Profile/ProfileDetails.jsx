@@ -6,14 +6,14 @@ function ProfileDetails(props) {
       <div className="row">
         <div className="col s12 m6">
           <h3>{props.place.name}</h3>
-          <p>ناونیشان : {props.place.address}</p>
-          <p>کاتی کارکردن : {props.place.workingAt}</p>
-          <p>کاتی گەیاندن : {props.place.deliveryAt}</p>
+          <p>Address : {props.place.address}</p>
+          <p>Working Time  : {props.place.workingAt}</p>
+          <p>Delivery Time  : {props.place.deliveryAt}</p>
           <p>
-            نرخی گەیاندن :{" "}
+            Delivery Fee :{" "}
             {props.place.deliveryFee === 0
-              ? "بـێ بـەرامـبـەر"
-              : props.place.deliveryFee + " دینار"}{" "}
+              ? "Free"
+              : props.place.deliveryFee + " $"}{" "}
           </p>
         </div>
         <div className="col s12 m5 right">
