@@ -9,12 +9,12 @@ const footer = () => {
           <img src="/images/logoBlack.png" alt="" />
 
           <div className={classes.footerUpRight}>
-            <p>ژمارە : 07725194590</p>
-            <p>ئیمەیڵ : RawandRebwar2010@gmail.com</p>
+            <p>Phone Number : 937426294</p>
+            <p>email : hello@gmail.com</p>
           </div>
         </div>
         <hr />
-        <div className={classes.footerDown}>CopyRight For Code Land</div>
+        <div className={classes.footerDown}>CopyRight For Roza</div>
       </section>
     </>
   );
