@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import Navbar from "../Components/Navbar/navbar";
 import Footer from "../Components/Footer/footer";
 import ProfileDetails from "../Components/Profile/ProfileDetails";
-import PlaceMenu from "../Components/Profile/PlaceMenu";
 import axios from "axios";
 import Spinner from "../Components/Spinner/spinner";
 
@@ -35,7 +34,6 @@ class PlaceProfile extends Component {
       renderedPlace = (
         <>
           <ProfileDetails place={this.state.place} />
-          <PlaceMenu posts={this.state.place.posts} />
           <BookingTable placeId={this.props.match.params.id} />
         </>
       );
