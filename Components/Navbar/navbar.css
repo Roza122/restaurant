@@ -1,0 +1,104 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+  align-items: center;
+  z-index: 2;
+}
+
+.logo {
+  height: 100px;
+  width: 100px;
+  display: block;
+}
+
+.menuBtn {
+  display: block;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}
+
+.navSecond {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 30%;
+}
+
+.navigation {
+  text-decoration: none;
+  color: #010101;
+  font-size: 1.1rem;
+  transition: transform 0.3s;
+}
+
+.navigation:hover {
+  transform: scale(1.1);
+  text-shadow: 0 0 2px #010101;
+}
+
+.btn-flat:focus {
+  background-color: none !important;
+}
+
+.openNavbar {
+  height: 0;
+  width: 0;
+  position: fixed;
+  z-index: 550;
+  text-align: center !important;
+  background-image: linear-gradient(to top right, #fbad19, #ffcb6d);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+}
+
+.openedNavbar {
+  height: 100vh;
+  width: 100%;
+  opacity: 1;
+  visibility: visible;
+}
+
+.navbarItems {
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.navbarItem {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  cursor: pointer;
+  width: 100%;
+  transition: transform 0.3s;
+}
+
+.navbarItem a {
+  color: #010101;
+}
+
+.navbarItem:hover {
+  transform: scale(1.2);
+}
+
+.menuBtnOpened {
+  height: 70px;
+  width: 70px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  cursor: pointer;
+}
+
+.activeLink {
+  font-size: 2rem;
+  font-weight: 700;
+  background: -webkit-linear-gradient(#eee, #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
