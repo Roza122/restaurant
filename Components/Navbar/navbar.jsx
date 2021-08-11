@@ -33,7 +33,7 @@ const Navbar = (props) => {
                 onClick={props.LOGOUT_USER}
                 style={props.colorWihte ? { color: "white" } : null}
               >
-                چونە دەرەوە
+                Logout
               </button>
               {!props.place ? (
                 <Link
@@ -41,7 +41,7 @@ const Navbar = (props) => {
                   to="/orders"
                   style={props.colorWihte ? { color: "white" } : null}
                 >
-                  داواكـاریـەکـانـت
+                  Your Orders
                 </Link>
               ) : (
                 <Link
@@ -49,17 +49,17 @@ const Navbar = (props) => {
                   to="/dashboard"
                   style={props.colorWihte ? { color: "white" } : null}
                 >
-                  داشـبـۆڕد
+                  Dashboard
                 </Link>
               )}
             </>
           ) : (
             <>
               <Link className={classes.navigation} to="/login">
-                چونە ژورەوە
+                Signin
               </Link>
               <Link className={classes.navigation} to="/signup">
-                خۆ تۆمارکردن
+                Signup
               </Link>
             </>
           )}
@@ -81,18 +81,18 @@ const Navbar = (props) => {
         <ul className={classes.navbarItems}>
           <li className={classes.navbarItem}>
             <NavLink activeClassName={classes.activeLink} exact to="/">
-              پـەڕەی سـەرەکـی{" "}
+              Main Page{" "}
             </NavLink>
           </li>
           <li className={classes.navbarItem}>
             <NavLink activeClassName={classes.activeLink} to="/category/food">
-              خـواردنـەکـان
+              Foods
             </NavLink>
           </li>
           <li className={classes.navbarItem}>
             <NavLink activeClassName={classes.activeLink} to="/category/drink">
               {" "}
-              خـواردنـەوەکـان{" "}
+              Drinks{" "}
             </NavLink>
           </li>
           <li className={classes.navbarItem}>
@@ -101,17 +101,17 @@ const Navbar = (props) => {
               to="/category/fast-food"
             >
               {" "}
-              خـواردنـی خـێـرا{" "}
+               fast Food{" "}
             </NavLink>
           </li>
           <li className={classes.navbarItem}>
             <NavLink activeClassName={classes.activeLink} to="/category/menu">
-              لـیـسـتـی خـواردنـەکـان
+              menu
             </NavLink>
           </li>
           <li className={classes.navbarItem}>
-            <NavLink activeClassName={classes.activeLink} to="/booking-table">
-              مـێـزگـرتـن
+            <NavLink activeClassName={classes.activeLink} to="/places">
+              all restaurants to booking table
             </NavLink>
           </li>
           <li className={classes.navbarItem}>
@@ -123,9 +123,9 @@ const Navbar = (props) => {
           <li className={classes.navbarItem}>
             <NavLink
               activeClassName={classes.activeLink}
-              to="/category/contact"
+              to="/contact"
             >
-              پـەیـوەنـدی کـردن{" "}
+              contact
             </NavLink>
           </li>
         </ul>
