@@ -1,0 +1,24 @@
+.footer {
+  background-color: #fbad19;
+}
+.footerUp {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.footerUp img {
+  height: 120px;
+  width: 120px;
+  object-fit: cover;
+}
+.footerUpRight p {
+  font-size: 1.1rem;
+}
+
+.footerDown {
+  text-align: center;
+}
